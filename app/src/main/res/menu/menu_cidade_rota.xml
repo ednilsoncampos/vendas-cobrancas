@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/mcr_voltar"
+        android:title="@string/str_voltar"/>
+    <item
+        android:id="@+id/mcr_salvarAbrirVenda"
+        android:title="Ir para Importar Venda"/>
+
+</menu>

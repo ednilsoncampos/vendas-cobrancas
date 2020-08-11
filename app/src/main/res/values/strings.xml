@@ -1,0 +1,30 @@
+<resources>
+
+    <string name="app_name">actusmovel</string>
+    <string name="title_activity_actus">Actus Rota Mobile</string>
+    
+    <!-- PRODUTO -->
+    <string name="listar_produto">Listar produto:</string>
+    <string name="importar_produtos">Importar produto:</string>
+    <string name="deleteTodos_produtos">Apagar todos os produtos:</string>
+
+    <string name="str_voltar">Voltar</string>
+    <string name="str_sincronizar">Sincronizar</string>
+    
+    <!-- PRINCIPAL -->
+    <string name="str_produto">Produto</string>
+    <string name="str_rota">Rota</string>
+    <string name="str_cidade">Cidade</string>
+    <string name="str_cliente">Cliente</string>
+    <string name="str_venda">Viagem</string>
+    <string name="str_viagem">Venda</string>
+
+    <!-- Venda -->
+    <string name="vnd_cpf">CPF:</string>
+    <string name="vnd_codProduto">Cód.:</string>
+    
+	<!--     VIAGEM -->
+    <string name="str_importarViagem">Importar viagem</string>
+    <string name="str_cancelarImpViagem">Cancelar viagem</string>    
+
+</resources>

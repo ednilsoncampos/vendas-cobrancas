@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:ignore="HardcodedText" >
+
+    <TableRow
+        android:id="@+id/linha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="0dp"
+        android:paddingTop="10dp" >
+
+        <TextView
+            android:id="@+id/act_txvResponsavel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_weight=".85"
+            android:gravity="left"
+            android:text=""
+            android:textSize="14sp"
+            android:textStyle="bold" >
+        </TextView>
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/linhaUm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="0dp"
+        android:paddingTop="10dp" >
+
+        <ImageButton
+            android:id="@+id/act_imgProduto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight=".25"
+            android:contentDescription="@null"
+            android:onClick="eventoCliqueBotao"
+            android:src="@drawable/produto_48" />
+
+        <ImageButton
+            android:id="@+id/act_imgViagem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight=".25"
+            android:contentDescription="@null"
+            android:onClick="eventoCliqueBotao"
+            android:src="@drawable/viagem_48" />
+
+        <ImageButton
+            android:id="@+id/act_imgRota"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight=".25"
+            android:contentDescription="@null"
+            android:onClick="eventoCliqueBotao"
+            android:src="@drawable/rota_48" />
+
+        <ImageButton
+            android:id="@+id/act_pesquisaVenda"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight=".25"
+            android:contentDescription="@null"
+            android:onClick="eventoCliqueBotao"
+            android:src="@drawable/editar_48" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/linhaUmLabels"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/txtProduto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight=".25"
+            android:gravity="center"
+            android:text="Produto"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/txtViagem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight=".25"
+            android:gravity="center"
+            android:text="Viagem"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/txtRota"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight=".25"
+            android:gravity="center"
+            android:text="Rota"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/txtVenda"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight=".25"
+            android:gravity="center"
+            android:text="Venda"
+            android:textSize="17sp" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/linhaDois"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:paddingBottom="0dp"
+        android:paddingTop="10dp" >
+
+        <ImageButton
+            android:id="@+id/act_imgSincronizarVenda"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight=".50"
+            android:contentDescription="@null"
+            android:onClick="eventoCliqueBotao"
+            android:src="@drawable/enviar_48" />
+
+        <ImageButton
+            android:id="@+id/act_imgCidadesRota"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight=".50"
+            android:contentDescription="@null"
+            android:onClick="eventoCliqueBotao"
+            android:src="@drawable/importar_48" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/linhaDoisLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="0dp" >
+
+        <TextView
+            android:id="@+id/txtEnviar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight=".50"
+            android:gravity="center"
+            android:text="Enviar Vendas"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/txtMapaVenda"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight=".50"
+            android:gravity="center"
+            android:text="Mapa Venda"
+            android:textSize="17sp" />
+    </TableRow>
+
+</TableLayout>

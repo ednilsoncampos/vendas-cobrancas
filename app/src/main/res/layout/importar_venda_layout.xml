@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:ignore="HardcodedText" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/ipv_txvLabelRota"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_weight=".12"
+            android:text="Rota:"
+            android:textSize="13dp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/ipv_txvRota"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_weight=".88"
+            android:textSize="13dp" >
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/ipv_txvLabelCidade"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_weight=".16"
+            android:text="Cidade:"
+            android:textSize="13dp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/ipv_txvCidade"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_weight=".84"
+            android:textSize="13dp" >
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <RadioButton
+            android:id="@+id/ipv_radioAberta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:onClick="eventoCliqueRadioButton"
+            android:text="Cobrança"
+            android:textSize="12dp" />
+
+        <RadioButton
+            android:id="@+id/ipv_radioRecobranca"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="eventoCliqueRadioButton"
+            android:text="Recobrança"
+            android:textSize="12dp" />
+
+        <RadioButton
+            android:id="@+id/ipv_radioAtrasada"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="eventoCliqueRadioButton"
+            android:text="Atrasada"
+            android:textSize="12dp" />
+
+        <ImageButton
+            android:id="@+id/ipv_btnPesquisar"
+            android:layout_width="38dip"
+            android:layout_height="40dip"
+            android:layout_marginTop="4dp"
+            android:background="@color/transparent"
+            android:onClick="eventoCliqueBotao"
+            android:src="@drawable/pesquisar" />
+    </LinearLayout>
+
+    <!-- IMPORTAR POR CÓDIGO -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/ipv_txvNumVenda"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_weight=".09"
+            android:text="Nº Venda:"
+            android:textSize="13dp" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/ipv_edtNumVenda"
+            android:layout_width="20dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight=".10"
+            android:hint="Nº Web"
+            android:inputType="number"
+            android:paddingBottom="9dp"
+            android:textSize="12dp" >
+
+            <requestFocus />
+        </EditText>
+
+        <ImageButton
+            android:id="@+id/ipv_btnImportar"
+            android:layout_width="38dip"
+            android:layout_height="40dip"
+            android:layout_marginTop="4dp"
+            android:layout_weight=".16"
+            android:background="@color/transparent"
+            android:onClick="eventoCliqueBotao"
+            android:paddingRight="110dp"
+            android:src="@drawable/importar" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dip"
+        android:background="@color/black" />
+
+    <!-- LABEL COLUNAS -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <!-- Numero da venda movel -->
+
+        <TextView
+            android:id="@+id/ipl_txvLabelNumVendaMovel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="2dp"
+            android:layout_weight=".12"
+            android:gravity="center"
+            android:text="Nº V."
+            android:textSize="11dp" >
+        </TextView>
+
+        <!-- numero da venda web -->
+
+        <TextView
+            android:id="@+id/ipl_txvLabelNumVendaWeb"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="2dp"
+            android:layout_weight=".14"
+            android:gravity="center"
+            android:text="Nº Web"
+            android:textSize="11dp" >
+        </TextView>
+
+        <!-- CLIENTE -->
+
+        <TextView
+            android:id="@+id/ipl_txvLabelCliente"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="2dp"
+            android:layout_weight=".54"
+            android:paddingLeft="0dp"
+            android:text="Cliente"
+            android:textSize="14dp" >
+        </TextView>
+
+        <!-- TOTAL -->
+
+        <TextView
+            android:id="@+id/ipl_txvLabelTotal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="6dp"
+            android:layout_marginTop="2dp"
+            android:layout_weight=".18"
+            android:gravity="right"
+            android:text="Total R$"
+            android:textSize="14dp" >
+        </TextView>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/ipv_ltv_dados"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+    </ListView>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/blue" />
+
+</LinearLayout>

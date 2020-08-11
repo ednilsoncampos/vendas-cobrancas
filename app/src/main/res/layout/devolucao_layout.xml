@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginLeft="4dp"
+    android:orientation="vertical"
+    android:weightSum="100"
+    tools:ignore="HardcodedText" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="163dp"
+        android:orientation="vertical"
+        android:weightSum="100"
+        tools:ignore="ObsoleteLayoutParam" >
+
+        <TextView
+            android:id="@+id/dev_txvTitulo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Titulo:"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/red" />
+
+        <TextView
+            android:id="@+id/dev_txvCliente"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dev_txvTitulo"
+            android:text="Cliente:"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/dev_txvLabelCidade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dev_txvCliente"
+            android:layout_marginTop="4dp"
+            android:text="Cidade:"
+            android:textSize="14sp"
+            android:width="56dp" />
+
+        <TextView
+            android:id="@+id/dev_txvCidade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dev_txvCliente"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@+id/dev_txvLabelCidade"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/dev_txvNumViagem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dev_txvLabelCidade"
+            android:layout_marginTop="4dp"
+            android:text="Nº Viagem:"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:width="160dp" />
+
+        <TextView
+            android:id="@+id/dev_txvNumVenda"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dev_txvLabelCidade"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@+id/dev_txvNumViagem"
+            android:text="Nº Venda:"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:width="160dip" />
+
+        <TextView
+            android:id="@+id/dev_txvLabelTotalVenda"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dev_txvNumViagem"
+            android:layout_marginTop="4dp"
+            android:text="Venda R$: "
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/dev_txvTotalVenda"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dev_txvNumVenda"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@+id/dev_txvLabelTotalVenda"
+            android:text="0.0"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/dev_txvLabelTotalRecebido"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dev_txvNumVenda"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@+id/dev_txvTotalVenda"
+            android:text="Recebido R$: "
+            android:textColor="@color/green"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/dev_txvTotalRecebido"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dev_txvNumVenda"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@+id/dev_txvLabelTotalRecebido"
+            android:text="0.0"
+            android:textColor="@color/green"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/dev_pesquisaCodigo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dev_txvLabelTotalRecebido"
+            android:focusable="true" >
+
+            <TextView
+                android:id="@+id/dev_pes_txvCodigoProduto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="2dp"
+                android:layout_weight=".05"
+                android:text="Código: "
+                android:textSize="15sp" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/dev_pes_edtCodigo"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginTop="4dp"
+                android:layout_weight=".90"
+                android:gravity="center"
+                android:height="34dp"
+                android:inputType="number"
+                android:paddingBottom="7dp" >
+            </EditText>
+
+            <ImageButton
+                android:id="@+id/dev_pes_btnPesquisar"
+                android:layout_width="38dip"
+                android:layout_height="40dip"
+                android:layout_marginTop="4dp"
+                android:layout_weight=".05"
+                android:background="@color/transparent"
+                android:contentDescription="@null"
+                android:onClick="eventoCliqueBotao"
+                android:src="@drawable/pesquisar" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/dev_pesquisa"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true" >
+
+        <TextView
+            android:id="@+id/dev_pes_txvNome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="2dp"
+            android:layout_weight=".05"
+            android:text="Descrição: "
+            android:textSize="15sp" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/dev_pes_edtNome"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginTop="4dp"
+            android:layout_weight=".95"
+            android:gravity="center"
+            android:height="34dp"
+            android:hint="pesquisa / 3 caracteres"
+            android:inputType="text"
+            android:paddingBottom="7dp" >
+        </EditText>
+        
+         <ImageButton
+                android:id="@+id/dev_pes_btnListarTodos"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="4dp"
+                android:layout_weight=".05"
+                android:background="@color/transparent"
+                android:contentDescription="@null"
+                android:onClick="eventoCliqueBotao"
+                android:src="@drawable/atualizar" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/devLabelsItens"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true" >
+
+        <TextView
+            android:id="@+id/dev_pes_txvCodigo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="2dp"
+            android:layout_weight=".15"
+            android:text="Cod."
+            android:textSize="12sp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/dev_pes_txvPrecoVenda"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="2dp"
+            android:layout_weight=".25"
+            android:text="Grupo"
+            android:textSize="12sp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/dev_pes_txvDescricao"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_weight=".53"
+            android:text="Descrição"
+            android:textSize="12sp" >
+        </TextView>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/dev_linhaSeparacao"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="@color/black" />
+
+    <ListView
+        android:id="@+id/dev_ltv_produtos"
+        android:layout_width="fill_parent"
+        android:layout_height="130dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="35"
+        android:descendantFocusability="beforeDescendants" >
+    </ListView>
+
+    <View
+        android:id="@+id/dev_linhaSeparacao4"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1"
+        android:background="@color/black" />
+
+    <LinearLayout
+        android:id="@+id/devLabelTotal"
+        android:layout_width="fill_parent"
+        android:layout_height="17dp"
+        android:layout_marginBottom="10dp"
+        android:focusable="true"
+        android:weightSum="1" >
+
+        <TextView
+            android:id="@+id/dev_pestxvLabelTotalRegistros"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="2dp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="Total Registros:"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/dev_pestxvTotalRegistros"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="2dp"
+            android:gravity="right"
+            android:text="0"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/devLabelsItensSelecionaodos"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="6"
+        android:focusable="true" >
+
+        <TextView
+            android:id="@+id/dev_pestxvDescricao"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="2dp"
+            android:layout_weight=".40"
+            android:text="Descrição"
+            android:textSize="12sp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/dev_pestxvQuantidade"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="2dp"
+            android:layout_weight=".17"
+            android:text="Qtde"
+            android:textSize="12sp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/dev_pestxvPrecoVenda"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="2dp"
+            android:layout_weight=".20"
+            android:text="Preço V."
+            android:textSize="12sp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/dev_pestxvTotal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="2dp"
+            android:layout_weight=".27"
+            android:text="Total"
+            android:textSize="12sp" >
+        </TextView>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/dev_linhaSeparacao2"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_weight="2"
+        android:background="@color/black" />
+
+    <ListView
+        android:id="@+id/dev_ltvItensSelecionados"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:layout_marginBottom="4dp"
+        android:layout_weight="25"
+        android:descendantFocusability="beforeDescendants" >
+    </ListView>
+
+    <View
+        android:id="@+id/dev_linhaSeparacao3"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1"
+        android:background="@color/black" />
+
+</LinearLayout>

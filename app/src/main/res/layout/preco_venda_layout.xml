@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:ignore="HardcodedText" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="4dp" >
+
+        <TextView
+            android:id="@+id/ipvl_txvLabelProduto"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_weight=".21"
+            android:text="Produto:"
+            android:textSize="15sp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/ipvl_txvProduto"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_weight=".79"
+            android:textSize="15sp" >
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="4dp" >
+
+        <TextView
+            android:id="@+id/ipvl_txvLabelPrecoMinimoVenda"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_weight=".15"
+            android:text="P.V. Min:"
+            android:textSize="15sp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/ipvl_txvPrecoMinimoVenda"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_weight=".15"
+            android:textSize="15sp"
+            android:textStyle="bold" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/ipvl_txvLabelPrecoTabela"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_weight=".22"
+            android:text="Preço Tabela:"
+            android:textSize="15sp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/ipvl_txvPrecoTabela"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_weight=".16"
+            android:textSize="15sp"
+            android:textStyle="bold" >
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_weight="1"
+        android:focusable="true" >
+
+        <TextView
+            android:id="@+id/ipvl_txvLabelPrecoVenda"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="P.Venda: "
+            android:textSize="15sp" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/ipvl_edtPrecoVenda"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_weight=".25"
+            android:gravity="right"
+            android:inputType="number"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:id="@+id/ipvl_txvLabelQuantidade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Qtde: "
+            android:textSize="15sp" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/ipvl_edtQuantidade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_weight=".25"
+            android:hint="Qtde"
+            android:inputType="number"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_weight=".60"
+        android:focusable="true"
+        android:gravity="right" >
+
+        <Button
+            android:id="@+id/ipvl_btnAdicionar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="eventoCliqueBotao"
+            android:text="Adicionar" />
+
+        <Button
+            android:id="@+id/ipvl_btnCancelar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="eventoCliqueBotao"
+            android:text="Cancelar" />
+    </LinearLayout>
+
+</LinearLayout>

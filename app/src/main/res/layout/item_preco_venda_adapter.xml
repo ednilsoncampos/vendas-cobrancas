@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="1"
+    tools:ignore="HardcodedText" >
+
+    <TextView
+        android:id="@+id/itpva_DesProduto"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_weight=".45"
+        android:text="descricao"
+        android:textSize="12sp" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/itpva_quantidade"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_weight=".10"
+        android:gravity="center"
+        android:text="qtde"
+        android:textSize="12sp" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/itpva_preco_venda"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_weight=".15"
+        android:gravity="right"
+        android:text="preço venda"
+        android:textSize="12sp" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/itpva_total_item"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_weight=".20"
+        android:gravity="right"
+        android:text="total"
+        android:textSize="12sp"
+        android:textStyle="bold" >
+    </TextView>
+
+    <ImageButton
+        android:id="@+id/itpva_btnEditar"
+        android:layout_width="20dp"
+        android:layout_height="33dp"
+        android:layout_weight=".05"
+        android:background="@color/transparent"
+        android:onClick="eventoCliqueBotao"
+        android:src="@drawable/editar_24" />
+
+    <ImageButton
+        android:id="@+id/itpva_btnExcluir"
+        android:layout_width="20dp"
+        android:layout_height="33dp"
+        android:layout_weight=".05"
+        android:background="@color/transparent"
+        android:onClick="eventoCliqueBotao"
+        android:src="@drawable/excluir_24" />
+
+</LinearLayout>

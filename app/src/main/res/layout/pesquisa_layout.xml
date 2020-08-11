@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:ignore="HardcodedText" >
+
+    <!-- USADO PARA CLIENTES E PRODUTOS -->
+
+    <requestFocus />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/pes_txvTitulo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_weight=".90"
+            android:text=""
+            android:textSize="13dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true" >
+
+        <TextView
+            android:id="@+id/pes_txvNome"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_weight=".37"
+            android:text="Nome:"
+            android:textSize="13dp" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/pes_edtNome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_weight=".58"
+            android:hint="pesquisa a cada 3 dígitos"
+            android:maxLength="14"
+            android:width="150dip" >
+        </EditText>
+
+        <ImageButton
+            android:id="@+id/pes_btnPesquisar"
+            android:layout_width="38dip"
+            android:layout_height="40dip"
+            android:layout_marginTop="4dp"
+            android:layout_weight=".05"
+            android:background="@color/transparent"
+            android:onClick="eventoCliqueBotao"
+            android:src="@drawable/pesquisar" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="@color/black" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/pes_txvLabelCodigo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_weight=".16"
+            android:text="Código"
+            android:textSize="13dp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/pes_txvLabelNome"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="45dp"
+            android:layout_weight=".84"
+            android:text="Nome"
+            android:textSize="13dp" >
+        </TextView>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/pes_ltv_dados"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+    </ListView>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="5dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/blue" />
+
+</LinearLayout>

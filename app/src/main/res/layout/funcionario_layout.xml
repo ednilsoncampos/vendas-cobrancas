@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:ignore="HardcodedText" >
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/fun_txvLabelUsuario"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_weight=".19"
+            android:text="Usuário:"
+            android:textSize="13dp" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/fun_edtUsuario"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="identifica a conexão"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_weight=".76" />
+        
+        <ImageButton
+            android:id="@+id/fun_btnSalvarUsuario"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="4dp"
+            android:layout_weight=".05"
+            android:background="@color/transparent"
+            android:onClick="eventoCliqueBotao"
+            android:paddingRight="4dp"
+            android:paddingTop="4dp"
+            android:src="@drawable/salvar_32" />        
+
+    </LinearLayout>    
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/fun_txvLabelNome"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_weight=".17"
+            android:text="Nome:"
+            android:textSize="13dp" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/fun_edtNome"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_weight=".90" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/fun_txvCpf"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_weight=".30"
+            android:text="CPF:"
+            android:textSize="13dp" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/fun_edtCpf"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_weight=".35"
+            android:maxLength="14"
+            android:text="" />
+
+        <ImageButton
+            android:id="@+id/fun_btnSalvar"
+            android:layout_width="38dip"
+            android:layout_height="40dip"
+            android:layout_marginTop="5dp"
+            android:layout_weight=".35"
+            android:background="@color/transparent"
+            android:onClick="eventoCliqueBotao"
+            android:paddingRight="55dp"
+            android:paddingTop="4dp"
+            android:src="@drawable/salvar_32" />
+    </LinearLayout>
+
+</LinearLayout>

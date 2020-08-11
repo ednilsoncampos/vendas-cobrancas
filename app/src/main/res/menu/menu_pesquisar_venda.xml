@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/mnpv_editar"
+        android:title="Editar"/>
+    <item
+        android:id="@+id/mnpv_devolucao"
+        android:title="Devolução"/>
+    <item
+        android:id="@+id/mnpv_brinde"
+        android:title="Brinde"/>
+    <item
+        android:id="@+id/mnpv_brinde_dinheiro"
+        android:title="Brinde em Dinheiro"/>
+    <item
+        android:id="@+id/mnpv_brinde_extra"
+        android:title="Brinde Extra"/>
+    <item
+        android:id="@+id/mnpv_troca"
+        android:title="Troca"/>
+    <item
+        android:id="@+id/mnpv_receb_dinheiro"
+        android:title="Recebimento em dinheiro"/>
+    <item
+        android:id="@+id/mnpv_receb_cheque"
+        android:title="Recebimento em cheque"/>
+    <item
+        android:id="@+id/mnpv_detalhamento_venda"
+        android:title="Detalhamento de venda"/>
+    <item
+        android:id="@+id/mnpv_delete_venda"
+        android:title="Apagar venda"/>
+
+</menu>

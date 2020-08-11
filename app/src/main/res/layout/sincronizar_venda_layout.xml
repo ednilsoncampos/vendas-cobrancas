@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:ignore="HardcodedText" >
+
+    <!-- Enviar Venda -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/snv_txvNome"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_weight=".36"
+            android:text="Cliente:"
+            android:textSize="13dp" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/snv_edtNome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_weight=".58"
+            android:hint="pesquisa a cada 3 dígitos"
+            android:maxLength="14"
+            android:width="150dip" />
+
+        <ImageButton
+            android:id="@+id/snv_btnPesquisar"
+            android:layout_width="38dip"
+            android:layout_height="40dip"
+            android:layout_marginTop="4dp"
+            android:layout_weight=".05"
+            android:background="@color/transparent"
+            android:onClick="eventoCliqueBotao"
+            android:src="@drawable/pesquisar" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/snv_txvFiltro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Filtrar:"
+            android:textSize="13dp" >
+        </TextView>
+
+        <RadioButton
+            android:id="@+id/snv_radioNaoEnviado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:onClick="eventoCliqueRadioButton"
+            android:text="Não Enviada"
+            android:textSize="12dp" />
+
+        <RadioButton
+            android:id="@+id/snv_radioEnviado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="eventoCliqueRadioButton"
+            android:text="Enviada"
+            android:textSize="12dp" />
+
+        <ImageButton
+            android:id="@+id/snv_btnPesquisarFiltro"
+            android:layout_width="38dip"
+            android:layout_height="40dip"
+            android:layout_marginTop="4dp"
+            android:background="@color/transparent"
+            android:onClick="eventoCliqueBotao"
+            android:src="@drawable/pesquisar" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dip"
+        android:background="@color/black" />
+
+    <!-- TITULO DAS COLUNAS -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <!-- Nº Venda -->
+
+        <TextView
+            android:id="@+id/snv_txvLabelNumVenda"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight=".13"
+            android:gravity="center"
+            android:text="Nº Web"
+            android:textSize="11dp" >
+        </TextView>
+
+        <!-- CLIENTE -->
+
+        <TextView
+            android:id="@+id/snv_txvLabelCliente"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight=".42"
+            android:text="Cliente"
+            android:textSize="11dp" >
+        </TextView>
+
+        <!-- TOTAL -->
+
+        <TextView
+            android:id="@+id/snv_txvLabelTotal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight=".22"
+            android:gravity="right"
+            android:text="Total R$"
+            android:textSize="11dp" >
+        </TextView>
+
+        <!-- SERVIDOR -->
+
+        <TextView
+            android:id="@+id/snv_txvLabelServidor"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="6dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight=".15"
+            android:text="Servidor"
+            android:textSize="11dp" >
+        </TextView>
+        <!-- ENVIAR -->
+
+        <TextView
+            android:id="@+id/snv_txvLabelEnviar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight=".11"
+            android:text="Enviar"
+            android:textSize="11dp" >
+        </TextView>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/snv_ltv_dados"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="10.0dp" >
+    </ListView>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="2dp"
+        android:background="@color/black" />
+
+</LinearLayout>

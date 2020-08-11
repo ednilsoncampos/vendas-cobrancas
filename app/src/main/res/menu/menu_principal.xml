@@ -1,0 +1,8 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- PRODUTO -->
+    <item
+        android:id="@+id/mp_acerto_cliente"
+        android:title="Importar Parametros Acerto Cliente"/>
+  
+</menu>

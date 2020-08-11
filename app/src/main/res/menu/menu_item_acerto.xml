@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/mna_acerto_voltar"
+        android:title="Voltar"/>
+    <item
+        android:id="@+id/mna_acerto_salvar"
+        android:title="Salvar"/>
+<!--     <item -->
+<!--         android:id="@+id/mna_acerto_add_item" -->
+<!--         android:title="Adicionar na lista"/> -->
+    <item
+        android:id="@+id/mna_detalhamento_venda"
+        android:title="Detalhamento de venda"/>
+
+</menu>

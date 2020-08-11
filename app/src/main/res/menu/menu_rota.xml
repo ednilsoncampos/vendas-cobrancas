@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/mr_sincronizar_rota"
+        android:title="Sincronizar Rota"/>
+    <item
+        android:id="@+id/mr_sincronizar_cidade"
+        android:title="Sincronizar Cidades"/>
+    <item
+        android:id="@+id/mr_cidade"
+        android:title="Ver Cidades"/>
+    <item
+        android:id="@+id/mr_pesquisar"
+        android:title="Pesquisar"/>
+    <item
+        android:id="@+id/mr_voltar"
+        android:title="@string/str_voltar"/>
+
+</menu>

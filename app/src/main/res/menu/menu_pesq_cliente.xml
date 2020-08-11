@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/mcp_voltar"
+        android:title="@string/str_voltar"/>
+    <item
+        android:id="@+id/mcp_nova_venda"
+        android:title="Nova Venda"/>
+    <item
+        android:id="@+id/mcp_viagem"
+        android:title="Viagem"/>
+
+</menu>

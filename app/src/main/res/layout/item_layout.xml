@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:ignore="HardcodedText" >
+
+    <TextView
+        android:id="@+id/itlCodigo"
+        android:layout_width="25dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:text="@+id/label"
+        android:textSize="12sp" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/itl_grupo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12sp"
+        android:layout_marginTop="4dp"
+        android:layout_toRightOf="@+id/itlCodigo"
+        android:text="@+id/label"
+        android:textSize="12sp" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/itl_DesProduto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_toRightOf="@+id/itl_grupo"
+        android:text="@+id/label"
+        android:textSize="12sp" >
+    </TextView>
+
+    <ImageButton
+        android:id="@+id/itl_btnAdicionar"
+        android:layout_width="33dp"
+        android:layout_height="33dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/transparent"
+        android:onClick="eventoCliqueBotao"
+        android:src="@drawable/adicionar_24" />
+
+</RelativeLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    tools:ignore="HardcodedText" >
+
+    <!-- N º Venda -->
+
+    <TextView
+        android:id="@+id/pva_txvNumVenda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="2dp"
+        android:layout_weight=".17"
+        android:gravity="center"
+        android:text="Nº V."
+        android:textSize="12dp" >
+    </TextView>
+
+    <!-- CLIENTE -->
+
+    <TextView
+        android:id="@+id/pva_txvLabelCliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="2dp"
+        android:layout_weight=".48"
+        android:text="Cliente"
+        android:textSize="10dp" >
+    </TextView>
+
+    <!-- STATUS -->
+
+    <TextView
+        android:id="@+id/pva_txvLabelStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="2dp"
+        android:layout_weight=".20"
+        android:gravity="right"
+        android:text="Status"
+        android:textSize="12dp" >
+    </TextView>
+
+    <!-- TOTAL -->
+
+    <TextView
+        android:id="@+id/pva_txvLabelTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="2dp"
+        android:layout_weight=".12"
+        android:gravity="right"
+        android:text="Total R$"
+        android:textSize="14dp" >
+    </TextView>
+
+    <RadioGroup
+        android:id="@+id/pva_radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/pva_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight=".03" />
+    </RadioGroup>
+
+</LinearLayout>

@@ -1,0 +1,113 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.com.actusrota"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:targetSdkVersion="8" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:icon="@drawable/atalho"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".activity.LoginActivity"
+            android:label="Actus Rota Mobile" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.ActusActivity"
+            android:label="@string/title_activity_actus" >
+        </activity>
+        <activity
+            android:name=".activity.VendaActivity"
+            android:label="Cadastro e/ou acerto de Venda" >
+        </activity>
+        <activity
+            android:name=".activity.CadastroCliente"
+            android:label="Novo cliente..." >
+        </activity>
+        <activity
+            android:name=".activity.ProdutoActivity"
+            android:label="Pesquisar produto por descrição ou código" >
+        </activity>
+        <activity
+            android:name=".activity.ClienteActivity"
+            android:label="Clientes por cidade" >
+        </activity>
+        <activity
+            android:name=".activity.RotaActivity"
+            android:label="Rotas" >
+        </activity>
+        <activity
+            android:name=".activity.CidadeActivity"
+            android:configChanges="orientation|screenLayout"
+            android:label="Cidades por Rota" >
+        </activity>
+        <activity
+            android:name=".activity.ItemActivity"
+            android:configChanges="keyboard|orientation"
+            android:label="Adicionar item"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name=".activity.ItemAcertoActivity"
+            android:label="Acerto de venda"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name=".activity.PagDinherioActivity"
+            android:label="Recebimento em dinheiro" >
+        </activity>
+        <activity
+            android:name=".activity.PagChequeActivity"
+            android:label="Recebimento em cheque" >
+        </activity>
+        <activity
+            android:name=".activity.ViagemActivity"
+            android:label="Sincronizar e/ou pesquisar viagem" >
+        </activity>
+        <activity
+            android:name=".activity.ExportarVendaActivity"
+            android:label="Exportar venda" >
+        </activity>
+        <activity
+            android:name=".activity.FuncionarioActivity"
+            android:label="Alterar CPF do responsável" >
+        </activity>
+        <activity
+            android:name=".activity.ImportarVendaActivity"
+            android:label="Importar e/ou pesquisar venda" >
+        </activity>
+        <activity
+            android:name=".activity.CidadeRotaActivity"
+            android:label="Cidades por rota" >
+        </activity>
+        <activity
+            android:name=".activity.BrindeDinheiroActivity"
+            android:label="Acerto de venda" >
+        </activity>
+        <activity
+            android:name=".activity.PesquisarVendaActivity"
+            android:label="Pesquisar venda" >
+        </activity>
+        <activity
+            android:name=".activity.DetalhamentoVenda"
+            android:label="Detalhamento de venda" >
+        </activity>
+        <activity
+            android:name=".activity.CadastroClienteActivity"
+            android:label="Cadastrar cliente" >
+        </activity>
+        <activity
+            android:name=".activity.PrecoVendaActivity"
+            android:label="Adicionar item" >
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:weightSum="1.0"
+    tools:ignore="HardcodedText" >
+
+    <EditText
+        android:id="@+id/ipg_edtNumeroCheque"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_weight=".36"
+        android:gravity="center"
+        android:hint="Nº cheque"
+        android:textSize="13dp" >
+    </EditText>
+
+    <EditText
+        android:id="@+id/ipg_edtDataVencimento"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_weight=".33"
+        android:hint="Dt.venc."
+        android:textSize="13dp" >
+    </EditText>
+
+    <EditText
+        android:id="@+id/ipg_edtValorParcela"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_weight=".30"
+        android:gravity="right|center_vertical"
+        android:hint="valor R$"
+        android:inputType="numberDecimal"
+        android:textSize="13dp" >
+    </EditText>
+
+</LinearLayout>

@@ -1,0 +1,37 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/mnv_produtos"
+        android:title="Produtos"/>
+    <item
+        android:id="@+id/mnv_voltar"
+        android:title="Voltar"/>
+    <item
+        android:id="@+id/mnv_salvar"
+        android:title="Salvar"/>
+
+    <item
+        android:id="@+id/mnv_devolucao"
+        android:title="Devolução"/>
+    <item
+        android:id="@+id/mnv_brinde"
+        android:title="Brinde"/>
+    <item
+        android:id="@+id/mnv_brinde_dinheiro"
+        android:title="Brinde em Dinheiro"/>       
+    <item
+        android:id="@+id/mnv_brinde_extra"
+        android:title="Brinde Extra"/>
+    <item
+        android:id="@+id/mnv_troca"
+        android:title="Troca"/>
+    <item
+        android:id="@+id/mnv_receb_dinheiro"
+        android:title="Recebimento em dinheiro"/>
+    <item
+        android:id="@+id/mnv_receb_cheque"
+        android:title="Recebimento em cheque"/>    
+    <item
+        android:id="@+id/mnv_delete_venda"
+        android:title="Apagar venda"/>           
+</menu>

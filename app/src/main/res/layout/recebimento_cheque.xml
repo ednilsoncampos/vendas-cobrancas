@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scroll"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:ignore="HardcodedText" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/chq_txvLabelTotalVenda"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Total V. R$: "
+            android:textSize="13dp"
+            android:textStyle="bold"
+            android:width="80dp" />
+
+        <TextView
+            android:id="@+id/chq_txvTotalVenda"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@+id/chq_txvLabelTotalVenda"
+            android:text="--------"
+            android:textSize="13dp"
+            android:textStyle="bold"
+            android:width="70dp" />
+
+        <TextView
+            android:id="@+id/chq_txvLabelReceber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@+id/chq_txvTotalVenda"
+            android:text="A Receber R$:"
+            android:textColor="@color/red"
+            android:textSize="13dp"
+            android:textStyle="bold"
+            android:width="95dp" />
+
+        <TextView
+            android:id="@+id/chq_txvReceber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@+id/chq_txvLabelReceber"
+            android:text="0.0"
+            android:textColor="@color/red"
+            android:textSize="13dp"
+            android:textStyle="bold"
+            android:width="100dip" />
+
+        <TextView
+            android:id="@+id/chq_txvLabelCliente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/chq_txvReceber"
+            android:layout_marginTop="5dp"
+            android:text="Cliente....... : "
+            android:textSize="13dp"
+            android:width="80dp" />
+
+        <TextView
+            android:id="@+id/chq_txvCliente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/chq_txvReceber"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/chq_txvLabelCliente"
+            android:text="--------"
+            android:textSize="13dp"
+            android:width="180dip" />
+
+        <TextView
+            android:id="@+id/chq_txvLabelData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/chq_txvCliente"
+            android:layout_marginTop="10dp"
+            android:text="Data Receb. :"
+            android:textSize="13dp"
+            android:width="80dp" />
+
+        <EditText
+            android:id="@+id/chq_edtData"
+            android:layout_width="wrap_content"
+            android:layout_height="35dip"
+            android:layout_below="@+id/chq_txvCliente"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/chq_txvLabelData"
+            android:paddingBottom="7dp"
+            android:paddingTop="4dp"
+            android:textSize="13dp"
+            android:width="115dp" />
+
+        <LinearLayout
+            android:id="@+id/chq_layFormaPagamento"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/chq_edtData" >
+
+            <TextView
+                android:id="@+id/chq_txvFormaPagamento"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cheque:"
+                android:textSize="13dp" >
+            </TextView>
+
+            <RadioButton
+                android:id="@+id/chq_radioAprazo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:onClick="eventoCliqueRadioButton"
+                android:text="A prazo"
+                android:textSize="12dp" />
+
+            <RadioButton
+                android:id="@+id/chq_radioAvista"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="eventoCliqueRadioButton"
+                android:text="À vista"
+                android:textSize="12dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/chq_txvLabelNumCheque"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/chq_layFormaPagamento"
+            android:layout_marginTop="10dp"
+            android:text="Cheque:"
+            android:textSize="13dp"
+            android:width="53dp" />
+
+        <EditText
+            android:id="@+id/chq_edtNumCheque"
+            android:layout_width="wrap_content"
+            android:layout_height="35dip"
+            android:layout_below="@+id/chq_layFormaPagamento"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/chq_txvLabelNumCheque"
+            android:hint="Nº"
+            android:paddingBottom="7dp"
+            android:paddingTop="4dp"
+            android:textSize="13dp"
+            android:width="115dp" />
+
+        <TextView
+            android:id="@+id/chq_txvLabelQtdeParc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/chq_layFormaPagamento"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/chq_edtNumCheque"
+            android:text="Parcela:"
+            android:textSize="13dp"
+            android:width="55dp" />
+
+        <EditText
+            android:id="@+id/chq_edtQtdParcela"
+            android:layout_width="wrap_content"
+            android:layout_height="35dip"
+            android:layout_below="@+id/chq_layFormaPagamento"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/chq_txvLabelQtdeParc"
+            android:hint="Qtd"
+            android:inputType="number"
+            android:paddingBottom="7dp"
+            android:paddingTop="4dp"
+            android:textSize="13dp"
+            android:width="50dp" />
+
+        <ImageButton
+            android:id="@+id/chq_btnGerarParcela"
+            android:layout_width="37dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/chq_layFormaPagamento"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@+id/chq_edtQtdParcela"
+            android:background="@color/transparent"
+            android:onClick="botaoClicado"
+            android:src="@drawable/gerar_parcela_24" />
+
+        <TextView
+            android:id="@+id/chq_txvLabNumCheque"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/chq_btnGerarParcela"
+            android:layout_marginBottom="0dp"
+            android:layout_marginLeft="6dp"
+            android:paddingBottom="0dp"
+            android:paddingTop="10dp"
+            android:text="Nº cheque"
+            android:textSize="13dp"
+            android:width="120dip" />
+
+        <TextView
+            android:id="@+id/chq_txvLabDtVenc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/chq_btnGerarParcela"
+            android:layout_marginBottom="0dp"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/chq_txvLabNumCheque"
+            android:paddingBottom="0dp"
+            android:paddingTop="10dp"
+            android:text="Dt.Venc."
+            android:textSize="13dp"
+            android:width="80dip" />
+
+        <TextView
+            android:id="@+id/chq_txvLabValorParcela"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/chq_btnGerarParcela"
+            android:layout_marginBottom="0dp"
+            android:layout_marginRight="6dp"
+            android:layout_toRightOf="@+id/chq_txvLabDtVenc"
+            android:gravity="right"
+            android:paddingBottom="0dp"
+            android:paddingTop="10dp"
+            android:text="Parcela R$"
+            android:textSize="13dp"
+            android:width="40dip" />
+
+        <ListView
+            android:id="@+id/chq_ltv_pagametos"
+            android:layout_width="fill_parent"
+            android:layout_height="5000dp"
+            android:layout_below="@+id/chq_txvLabNumCheque"
+            android:layout_marginTop="0dp"
+            android:paddingTop="0dp" >
+        </ListView>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="5dp"
+            android:layout_below="@+id/chq_ltv_pagametos"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/blue" />
+        
+    </RelativeLayout>
+
+</ScrollView>

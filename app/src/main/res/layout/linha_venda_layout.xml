@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:weightSum="1.0"
+    tools:ignore="HardcodedText" >
+    
+    <!-- N º Venda -->
+
+    <TextView
+        android:id="@+id/lvn_txvNumVenda"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="2dp"
+        android:layout_weight=".09"
+        android:gravity="center"
+        android:text="Nº"
+        android:textSize="12dp" >
+    </TextView>    
+
+    <!-- CLIENTE -->
+
+    <TextView
+        android:id="@+id/lvn_txvLabelCliente"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="2dp"
+        android:layout_weight=".40"
+        android:text="Cliente"
+        android:textSize="12dp" >
+    </TextView>
+
+    <!-- TOTAL -->
+
+    <TextView
+        android:id="@+id/lvn_txvLabelTotal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_weight=".25"
+        android:layout_marginRight="0dp"
+        android:gravity="right"
+        android:text="Total R$"
+        android:textSize="12dp" >
+    </TextView>
+    
+    <!-- SERVIDOR -->
+
+    <TextView
+        android:id="@+id/lvn_txvLabelServidor"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_weight=".21"
+        android:text="Servidor"
+        android:gravity="center"
+        android:textSize="9dp" >
+    </TextView>    
+    
+    <!-- ENVIAR -->
+
+    <ImageButton
+        android:id="@+id/lvn_btnEnviar"
+        android:layout_width="20dp"
+        android:layout_height="40dp"
+        android:layout_weight=".05"
+        android:background="@color/transparent"
+        android:src="@drawable/enviar_32" />
+
+</LinearLayout>

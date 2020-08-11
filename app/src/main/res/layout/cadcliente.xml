@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scroll"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:ignore="HardcodedText" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginTop="4dp" >
+
+            <TextView
+                android:id="@+id/cadcli_txvLabelCidade"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_weight=".19"
+                android:text="Cidade:"
+                android:textSize="15sp"
+                android:textStyle="bold" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/cadcli_txvCidade"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_weight=".81"
+                android:textSize="15sp"
+                android:textStyle="bold" >
+            </TextView>
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/cadcli_edtNome"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginTop="4dp"
+            android:hint="Nome" >
+
+            <requestFocus />
+        </EditText>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:focusable="true" >
+
+            <EditText
+                android:id="@+id/cadcli_edtCPF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_weight=".25"
+                android:gravity="center"
+                android:hint="CPF"
+                android:inputType="number"
+                android:maxLength="11" >
+            </EditText>
+
+            <EditText
+                android:id="@+id/cadcli_edtRG"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_weight=".20"
+                android:gravity="center"
+                android:hint="RG"
+                android:inputType="number" >
+            </EditText>
+        </LinearLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="2dp"
+            android:background="@color/black" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:focusable="true" >
+
+            <EditText
+                android:id="@+id/cadcli_edtLogradouro"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_weight=".25"
+                android:hint="Logradouro" >
+            </EditText>
+
+            <EditText
+                android:id="@+id/cadcli_edtNumeroEndereco"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_weight=".75"
+                android:hint="Nº" >
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:focusable="true" >
+
+            <EditText
+                android:id="@+id/cadcli_edtBairro"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_weight=".40"
+                android:hint="Bairro" >
+            </EditText>
+
+            <EditText
+                android:id="@+id/cadcli_edtCep"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_weight=".60"
+                android:hint="CEP"
+                android:inputType="number"
+                android:maxLength="8" >
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp" >
+
+            <EditText
+                android:id="@+id/cadcli_edtPontoReferencia"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:hint="Ponto de Referência" >
+            </EditText>
+        </LinearLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="2dp"
+            android:background="@color/black" />
+
+        <TextView
+            android:id="@+id/cadcli_txvLabelResidencial"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="4dp"
+            android:text="Residencial:"
+            android:textSize="15sp"
+            android:textStyle="bold" >
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp" >
+
+            <EditText
+                android:id="@+id/cadcli_edtDDDRes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_weight=".10"
+                android:hint="(DD)"
+                android:inputType="number"
+                android:maxLength="2" >
+            </EditText>
+
+            <EditText
+                android:id="@+id/cadcli_edtNumeroRes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_weight=".90"
+                android:hint="Número"
+                android:inputType="number"
+                android:maxLength="9" >
+            </EditText>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/cadcli_txvLabelCelular"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="4dp"
+            android:text="Celular:"
+            android:textSize="15sp"
+            android:textStyle="bold" >
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp" >
+
+            <EditText
+                android:id="@+id/cadcli_edtDDDCel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_weight=".10"
+                android:hint="(DD)"
+                android:inputType="number"
+                android:maxLength="2" >
+            </EditText>
+
+            <EditText
+                android:id="@+id/cadcli_edtNumeroCel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_weight=".90"
+                android:hint="Número"
+                android:inputType="number"
+                android:maxLength="9" >
+            </EditText>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/cadcli_txvLabelComercial"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="4dp"
+            android:text="Comercial:"
+            android:textSize="15sp"
+            android:textStyle="bold" >
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp" >
+
+            <EditText
+                android:id="@+id/cadcli_edtDDDCom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_weight=".10"
+                android:hint="(DD)"
+                android:inputType="number"
+                android:maxLength="2" >
+            </EditText>
+
+            <EditText
+                android:id="@+id/cadcli_edtNumeroCom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_weight=".90"
+                android:hint="Número"
+                android:inputType="number"
+                android:maxLength="9" >
+            </EditText>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

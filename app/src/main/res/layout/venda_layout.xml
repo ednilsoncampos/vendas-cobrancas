@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:ignore="HardcodedText" >
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="HardcodedText" >
+
+        <RelativeLayout
+            android:id="@+id/vnd_relativeLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/vnd_txvData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Data:"
+                android:textSize="12sp"
+                android:width="55dp" />
+
+            <DatePicker
+                android:id="@+id/vnd_dtpDataVenda"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/vnd_txvData"
+                android:textSize="12sp" >
+            </DatePicker>
+
+            <TextView
+                android:id="@+id/vnd_txvDtVencimento"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/vnd_dtpDataVenda"
+                android:paddingTop="10dp"
+                android:text="Vencimento:"
+                android:textSize="12sp"
+                android:width="70dp" />
+
+            <EditText
+                android:id="@+id/vnd_edtDtVencimento"
+                android:layout_width="90dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/vnd_dtpDataVenda"
+                android:layout_marginTop="8dp"
+                android:layout_toRightOf="@+id/vnd_txvDtVencimento"
+                android:inputType="date"
+                android:paddingBottom="9dp"
+                android:textSize="12sp" >
+
+                <requestFocus />
+            </EditText>
+
+            <TextView
+                android:id="@+id/vnd_txvCpf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/vnd_edtDtVencimento"
+                android:layout_marginTop="3dp"
+                android:paddingTop="10dp"
+                android:text="@string/vnd_cpf"
+                android:textSize="12sp"
+                android:width="45dp" />
+
+            <EditText
+                android:id="@+id/vnd_edtCPF"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_below="@+id/vnd_edtDtVencimento"
+                android:layout_marginTop="8dp"
+                android:layout_toRightOf="@+id/vnd_txvCpf"
+                android:inputType="number"
+                android:maxLength="14"
+                android:paddingBottom="9dp"
+                android:textSize="12sp"
+                android:width="150dip" />
+
+            <ImageButton
+                android:id="@+id/vnd_btnPesquisarPorCPF"
+                android:layout_width="38dip"
+                android:layout_height="40dip"
+                android:layout_below="@+id/vnd_edtDtVencimento"
+                android:layout_toRightOf="@+id/vnd_edtCPF"
+                android:background="@color/transparent"
+                android:contentDescription="@null"
+                android:onClick="eventoCliqueBotao"
+                android:src="@drawable/pesquisar" />
+
+            <TextView
+                android:id="@+id/vnd_txvCodigo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/vnd_edtCPF"
+                android:paddingTop="10dp"
+                android:text="Código:"
+                android:textSize="12sp"
+                android:width="45dp" />
+
+            <EditText
+                android:id="@+id/vnd_edtCodigo"
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/vnd_edtCPF"
+                android:layout_marginTop="8dp"
+                android:layout_toRightOf="@+id/vnd_txvCodigo"
+                android:inputType="number"
+                android:paddingBottom="9dp"
+                android:textSize="12sp" />
+
+            <ImageButton
+                android:id="@+id/vnd_btnPesquisarCliente"
+                android:layout_width="38dip"
+                android:layout_height="40dip"
+                android:layout_below="@+id/vnd_edtCPF"
+                android:layout_toRightOf="@+id/vnd_edtCodigo"
+                android:background="@color/transparent"
+                android:contentDescription="Cliente"
+                android:onClick="eventoCliqueBotao"
+                android:src="@drawable/pesquisar" />
+
+            <TextView
+                android:id="@+id/vnd_txvNome"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/vnd_btnPesquisarCliente"
+                android:layout_marginTop="13dp"
+                android:text="Nome:"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:width="45dp" />
+
+            <TextView
+                android:id="@+id/vnd_txvCidade"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/vnd_txvNome"
+                android:paddingTop="10dp"
+                android:text="Cidade:"
+                android:textSize="12sp"
+                android:width="45dp" />
+
+            <TextView
+                android:id="@+id/vnd_txvCodProduto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/vnd_txvCidade"
+                android:paddingTop="10dp"
+                android:text="Produto:"
+                android:textSize="12sp"
+                android:width="51dp" />
+
+            <ImageButton
+                android:id="@+id/vnd_btnAbriProdutos"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_below="@+id/vnd_txvCidade"
+                android:layout_marginRight="4dp"
+                android:layout_toRightOf="@+id/vnd_txvCodProduto"
+                android:background="@color/transparent"
+                android:onClick="eventoCliqueBotao"
+                android:src="@drawable/adicionar_24" />
+
+            <TextView
+                android:id="@+id/vnd_txvLabelTotalVenda"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/vnd_txvCidade"
+                android:layout_toRightOf="@+id/vnd_btnAbriProdutos"
+                android:paddingTop="10dp"
+                android:text="Total R$:"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:width="56dip" />
+
+            <TextView
+                android:id="@+id/vnd_txvTotalVenda"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/vnd_txvCidade"
+                android:layout_toRightOf="@+id/vnd_txvLabelTotalVenda"
+                android:paddingTop="10dp"
+                android:text="0.0"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:width="60dip" />
+
+            <TextView
+                android:id="@+id/vnd_txvNumViagem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/vnd_txvCidade"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/vnd_txvTotalVenda"
+                android:paddingTop="11dp"
+                android:text="Nº Viagem: "
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:width="135dp" />
+
+            <TextView
+                android:id="@+id/vnd_txvLabDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/vnd_btnAbriProdutos"
+                android:layout_marginBottom="0dp"
+                android:paddingBottom="0dp"
+                android:paddingTop="10dp"
+                android:text="Descrição"
+                android:textSize="12sp"
+                android:width="120dip" />
+
+            <TextView
+                android:id="@+id/vnd_txvLabQtde"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/vnd_btnAbriProdutos"
+                android:layout_marginBottom="0dp"
+                android:layout_toRightOf="@+id/vnd_txvLabDesc"
+                android:paddingBottom="0dp"
+                android:paddingTop="10dp"
+                android:text=" Qtde "
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:width="40dip" />
+
+            <TextView
+                android:id="@+id/vnd_txvLabPrecVenda"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/vnd_btnAbriProdutos"
+                android:layout_marginBottom="0dp"
+                android:layout_toRightOf="@+id/vnd_txvLabQtde"
+                android:gravity="right"
+                android:paddingBottom="0dp"
+                android:paddingRight="4dp"
+                android:paddingTop="10dp"
+                android:text="P.Venda"
+                android:textSize="12sp"
+                android:width="30dip" />
+
+            <View
+                android:id="@+id/vnd_separacao"
+                android:layout_width="wrap_content"
+                android:layout_height="1dip"
+                android:layout_below="@+id/vnd_txvLabDesc"
+                android:background="@color/black" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <ListView
+        android:id="@+id/vnd_lst_produtos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/scroll"
+        android:layout_marginTop="0dp"
+        android:paddingTop="0dp" >
+    </ListView>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_below="@+id/vnd_lst_produtos"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/black" />
+
+</RelativeLayout>

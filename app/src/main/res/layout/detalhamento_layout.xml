@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:ignore="HardcodedText" >
+
+    <requestFocus />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true" >
+
+        <TextView
+            android:id="@+id/dtl_txvLabelCheque"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_weight=".18"
+            android:text="Cheque:"
+            android:textSize="13dp"
+            android:textStyle="bold" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/dtl_txvCheque"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="4dp"
+            android:layout_weight=".33"
+            android:gravity="left"
+            android:text="0.0"
+            android:textColor="@color/green"
+            android:textSize="13dp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/dtl_txvLabelDinheiro"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_weight=".20"
+            android:text="Dinheiro:"
+            android:textSize="13dp"
+            android:textStyle="bold" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/dtl_txvDinheiro"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="4dp"
+            android:layout_weight=".29"
+            android:text="0.0"
+            android:textColor="@color/green"
+            android:textSize="13dp" >
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true" >
+
+        <TextView
+            android:id="@+id/dtl_txvLabelTotalRecebimento"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_weight=".11"
+            android:text="Recebido:"
+            android:textSize="13dp"
+            android:textStyle="bold" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/dtl_txvTotalRecebimento"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="4dp"
+            android:layout_weight=".15"
+            android:gravity="left"
+            android:text="0.0"
+            android:textColor="@color/green"
+            android:textSize="13dp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/dtl_txvLabelAReceber"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_weight=".12"
+            android:text="A receber:"
+            android:textSize="13dp"
+            android:textStyle="bold" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/dtl_txvTotalAReceber"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="4dp"
+            android:layout_weight=".14"
+            android:gravity="left"
+            android:text="0.0"
+            android:textColor="@color/red"
+            android:textSize="13dp" >
+        </TextView>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/black" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true" >
+
+        <TextView
+            android:id="@+id/dtl_txvLabelDevolucao"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_weight=".23"
+            android:text="Devolução:"
+            android:textSize="13dp"
+            android:textStyle="bold" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/dtl_txvDevolucao"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="4dp"
+            android:layout_weight=".77"
+            android:gravity="left"
+            android:text="0.0"
+            android:textColor="@color/red"
+            android:textSize="13dp" >
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true" >
+
+        <TextView
+            android:id="@+id/dtl_txvLabelBrindeRS"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_weight=".22"
+            android:text="Brinde R$:"
+            android:textSize="13dp"
+            android:textStyle="bold" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/dtl_txvBrindeRS"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="4dp"
+            android:layout_weight=".78"
+            android:gravity="left"
+            android:text="0.0"
+            android:textColor="@color/red"
+            android:textSize="13dp" >
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true" >
+
+        <TextView
+            android:id="@+id/dtl_txvLabelBrindeProduto"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_weight=".33"
+            android:text="Brinde Produto:"
+            android:textSize="13dp"
+            android:textStyle="bold" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/dtl_txvBrindeProduto"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_weight=".67"
+            android:gravity="left"
+            android:text="0.0"
+            android:textSize="13dp" >
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true" >
+
+        <TextView
+            android:id="@+id/dtl_txvLabelSomaBrinde"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_weight=".28"
+            android:text="Soma Brinde:"
+            android:textSize="13dp"
+            android:textStyle="bold" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/dtl_txvSomaBrinde"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_weight=".72"
+            android:gravity="left"
+            android:text="0.0"
+            android:textSize="13dp" >
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true" >
+
+        <TextView
+            android:id="@+id/dtl_txvLabelTroca"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_weight=".13"
+            android:text="Troca:"
+            android:textSize="13dp"
+            android:textStyle="bold" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/dtl_txvTroca"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="4dp"
+            android:layout_weight=".37"
+            android:gravity="left"
+            android:text="0.0"
+            android:textSize="13dp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/dtl_txvLabelVenda"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_weight=".21"
+            android:text="Venda R$:"
+            android:textSize="13dp"
+            android:textStyle="bold" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/dtl_txvVenda"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="4dp"
+            android:layout_weight=".29"
+            android:gravity="left"
+            android:text="0.0"
+            android:textSize="13dp"
+            android:textStyle="bold" >
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true" >
+
+        <TextView
+            android:id="@+id/dtl_txvLabelNumWeb"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_weight=".20"
+            android:text="Nº V.Web:"
+            android:textSize="13dp"
+            android:textStyle="bold" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/dtl_txvNumWeb"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="4dp"
+            android:layout_weight=".26"
+            android:gravity="left"
+            android:text="0.0"
+            android:textSize="13dp"
+            android:textStyle="bold" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/dtl_txvLabelNumVenda"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_weight=".07"
+            android:text="Nº:"
+            android:textSize="13dp"
+            android:textStyle="bold" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/dtl_txvNumVenda"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="4dp"
+            android:layout_weight=".14"
+            android:gravity="left"
+            android:text="0.0"
+            android:textSize="13dp"
+            android:textStyle="bold" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/dtl_txvLabelQtdePeca"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_weight=".17"
+            android:text="Q.Peças:"
+            android:textSize="13dp"
+            android:textStyle="bold" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/dtl_txvQtdePeca"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="4dp"
+            android:layout_weight=".10"
+            android:gravity="left"
+            android:text="0"
+            android:textSize="13dp"
+            android:textStyle="bold" >
+        </TextView>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/black" />
+
+    <TextView
+        android:id="@+id/dtl_txvItensVenda"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text=" Itens da Venda "
+        android:textColor="@color/blue"
+        android:textSize="15dp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true" >
+
+        <TextView
+            android:id="@+id/dtl_txvLabDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:layout_weight=".80"
+            android:paddingBottom="0dp"
+            android:text="Descrição"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/dtl_txvLabQtde"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:layout_weight=".10"
+            android:paddingBottom="0dp"
+            android:text=" Qtde "
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/dtl_txvLabPrecVenda"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:layout_weight=".10"
+            android:gravity="right"
+            android:paddingBottom="0dp"
+            android:paddingRight="4dp"
+            android:text="P.Venda"
+            android:textSize="12dp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/black" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/dtl_itensVenda"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp" >
+        </ListView>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/black" />
+
+</LinearLayout>

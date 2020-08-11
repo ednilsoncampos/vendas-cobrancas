@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/mnit_adicionar_produto"
+        android:title="Adicionar itens"/>
+   
+    <item
+        android:id="@+id/mnit_voltar"
+        android:title="Voltar"/>
+
+</menu>

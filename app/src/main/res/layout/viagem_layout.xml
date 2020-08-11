@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:ignore="HardcodedText" >
+
+    <TextView
+        android:id="@+id/vig_txvCodViagem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vig_txvLabelRota"
+        android:layout_marginTop="15dp"
+        android:text="Nº Viagem:"
+        android:textSize="13dp"
+        android:width="70dip" />
+
+    <EditText
+        android:id="@+id/vig_edtNumViagem"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/vig_txvCodViagem"
+        android:inputType="number"
+        android:paddingBottom="7dp"
+        android:textSize="14dp"
+        android:width="100dp" />
+
+    <ImageButton
+        android:id="@+id/vig_btnPesquisarViagem"
+        android:layout_width="45dp"
+        android:layout_height="47dp"
+        android:layout_toRightOf="@+id/vig_edtNumViagem"
+        android:background="@color/transparent"
+        android:src="@drawable/pesquisar" />
+
+    <TextView
+        android:id="@+id/vig_txvLabelAdiantamento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vig_btnPesquisarViagem"
+        android:paddingTop="5dp"
+        android:text="Adiantamento: "
+        android:textSize="12sp"
+        android:width="83dp" />
+
+    <TextView
+        android:id="@+id/vig_txvAdiantamento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vig_edtNumViagem"
+        android:layout_toRightOf="@+id/vig_txvLabelAdiantamento"
+        android:layout_marginTop="10dp"
+        android:text=""
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/vig_txvLabelDataSaida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vig_btnPesquisarViagem"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@+id/vig_txvAdiantamento"
+        android:paddingTop="5dp"
+        android:text="Data saída:"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/vig_txvDataSaida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/vig_btnPesquisarViagem"
+        android:layout_toRightOf="@+id/vig_txvLabelDataSaida"
+        android:paddingTop="5dp"
+        android:text=""
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/vig_txvLabCodigo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vig_txvLabelAdiantamento"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="5dp"
+        android:paddingBottom="0dp"
+        android:paddingTop="10dp"
+        android:text=" Cod. "
+        android:textSize="13dp"
+        android:width="40dip" />
+
+    <TextView
+        android:id="@+id/vig_txvLabDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vig_txvLabelAdiantamento"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="4dp"
+        android:layout_toRightOf="@+id/vig_txvLabCodigo"
+        android:paddingBottom="0dp"
+        android:paddingTop="10dp"
+        android:text="Descrição"
+        android:textSize="13dp"
+        android:width="130dp" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="wrap_content"
+        android:layout_height="1dip"
+        android:layout_below="@+id/vig_txvLabDesc"
+        android:background="@color/black" />
+
+    <ListView
+        android:id="@+id/vig_ltv_itens"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/vig_txvLabDesc" >
+    </ListView>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dip"
+        android:layout_below="@+id/vig_ltv_itens"
+        android:background="@color/black" />
+
+    <TextView
+        android:id="@+id/vig_txvLabQtde"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/view1"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="8dp"
+        android:paddingBottom="0dp"
+        android:paddingTop="10dp"
+        android:text=" Qtde "
+        android:textSize="13dp" />
+
+</RelativeLayout>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:ignore="HardcodedText" >
+
+    <TextView
+        android:id="@+id/brd_txvTitulo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Titulo:"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/red" />
+
+    <TextView
+        android:id="@+id/brd_txvCliente"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/brd_txvTitulo"
+        android:text="Cliente:"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/brd_txvLabelCidade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/brd_txvCliente"
+        android:layout_marginTop="4dp"
+        android:text="Cidade:"
+        android:textSize="15dp"
+        android:width="56dp" />
+
+    <TextView
+        android:id="@+id/brd_txvCidade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/brd_txvCliente"
+        android:layout_marginTop="4dp"
+        android:layout_toRightOf="@+id/brd_txvLabelCidade"
+        android:textSize="15dp"
+        android:width="160dip" />
+
+    <TextView
+        android:id="@+id/brd_txvNumViagem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/brd_txvLabelCidade"
+        android:layout_marginTop="4dp"
+        android:text="Nº Viagem:"
+        android:textSize="15dp"
+        android:width="160dp" />
+
+    <TextView
+        android:id="@+id/brd_txvNumVenda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/brd_txvLabelCidade"
+        android:layout_marginTop="4dp"
+        android:layout_toRightOf="@+id/brd_txvNumViagem"
+        android:text="Nº Venda:"
+        android:textSize="15dp"
+        android:width="160dip" />
+
+    <TextView
+        android:id="@+id/brd_txvLabelTotalVenda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/brd_txvNumViagem"
+        android:layout_marginTop="4dp"
+        android:text="Total R$: "
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/brd_txvTotalVenda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/brd_txvNumVenda"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@+id/brd_txvLabelTotalVenda"
+        android:text="0.0"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/brd_txvBrindeRS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/brd_txvLabelTotalVenda"
+        android:layout_marginTop="6dp"
+        android:text="Brinde R$:"
+        android:textSize="18dp" />
+
+    <EditText
+        android:id="@+id/brd_edtBrindeRS"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_below="@+id/brd_txvTotalVenda"
+        android:layout_marginTop="4dp"
+        android:layout_toRightOf="@+id/brd_txvBrindeRS"
+        android:inputType="numberDecimal"
+        android:paddingBottom="6dp"
+        android:width="115dp" />
+
+    <ImageButton
+        android:id="@+id/brd_btnSalvar"
+        android:layout_width="38dip"
+        android:layout_height="37dip"
+        android:layout_below="@+id/brd_txvTotalVenda"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="1dp"
+        android:layout_toRightOf="@+id/brd_edtBrindeRS"
+        android:background="@color/transparent"
+        android:onClick="eventoCliqueBotao"
+        android:src="@drawable/salvar_32" />
+
+</RelativeLayout>

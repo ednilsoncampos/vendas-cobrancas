@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="4dp"
+    android:layout_weight="1"
+    android:orientation="vertical"
+    tools:ignore="HardcodedText" >
+
+    <LinearLayout
+        android:id="@+id/ipl_pesquisa"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:focusable="true" >
+
+        <EditText
+            android:id="@+id/ipl_pes_edtNome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_weight=".08"
+            android:gravity="center"
+            android:height="34dp"
+            android:hint="código"
+            android:paddingBottom="7dp" >
+        </EditText>
+
+        <ImageButton
+            android:id="@+id/ipl_pes_btnPesquisar"
+            android:layout_width="38dip"
+            android:layout_height="40dip"
+            android:layout_marginTop="4dp"
+            android:layout_weight=".05"
+            android:background="@color/transparent"
+            android:onClick="eventoCliqueBotao"
+            android:src="@drawable/pesquisar" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ipl_pesquisaDescricao"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:focusable="true"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/ipl_pes_edtDescricao"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_weight=".08"
+            android:gravity="center"
+            android:hint="Descrição"
+            android:paddingBottom="7dp" >
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/iplLabelsItens"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:focusable="true" >
+
+        <TextView
+            android:id="@+id/ipl_pes_txvCodigo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_weight=".10"
+            android:text="Cod."
+            android:textSize="12sp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/ipl_pes_txvGrupo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_weight=".20"
+            android:gravity="center"
+            android:text="Grupo"
+            android:textSize="12sp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/ipl_pes_txvDescricao"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="2dp"
+            android:layout_weight=".60"
+            android:text="Descrição"
+            android:textSize="12sp" >
+        </TextView>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/ipl_linhaSeparacao"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_marginBottom="4dp"
+        android:background="@color/black" />
+
+    <ListView
+        android:id="@+id/ipl_ltv_itens"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_weight=".50" >
+    </ListView>
+
+    <View
+        android:id="@+id/ipl_fim"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/black" />
+
+    <LinearLayout
+        android:id="@+id/iplLabelsItensSelecionados"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="8dp"
+        android:focusable="true" >
+
+        <TextView
+            android:id="@+id/ipl_pestxvDescricao"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="2dp"
+            android:layout_weight=".40"
+            android:text="Descrição"
+            android:textSize="12sp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/ipl_pestxvQuantidade"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="2dp"
+            android:layout_weight=".17"
+            android:text="Qtde"
+            android:textSize="12sp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/ipl_pestxvPrecoVenda"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="2dp"
+            android:layout_weight=".21"
+            android:gravity="center"
+            android:text="P.Venda"
+            android:textSize="12sp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/ipl_pestxvTotal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="2dp"
+            android:layout_weight=".22"
+            android:text="Total"
+            android:textSize="12sp" >
+        </TextView>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/ipl_linhaSeparacao1"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/black" />
+
+    <ListView
+        android:id="@+id/ipl_ltv_itensAdicionados"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_weight=".40" >
+    </ListView>
+
+    <View
+        android:id="@+id/ipl_fim2"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/black" />
+
+</LinearLayout>
